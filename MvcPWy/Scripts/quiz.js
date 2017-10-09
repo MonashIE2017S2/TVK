@@ -22,7 +22,6 @@ var keys=[];
 
 var database = firebase.database();
 
-
 database.ref().on("value", function (snap) {
 //pull entries from database
     var obj = snap.val();
@@ -37,7 +36,7 @@ database.ref().on("value", function (snap) {
             },
             {
                 type: "radiogroup", name: "StudyEngagement2", title: "What is the overall grade or academic status for this child?", isRequired: true,
-                colCount: 6, choices: ["Excellent(TOP 15%)", "Good(TOP 30%)", "Fair(TOP 60%)", "Not Good(Below 60%)"]
+                colCount: 6, choices: ["Excellent(Top 15%)", "Good(Top 30%)", "Fair(Top 60%)", "Not Good(Below 60%)"]
             },
             {
                 type: "radiogroup", name: "Personality1", title: "Does this child have a record of significant bad behavior?(eg.violence)", isRequired: true,
@@ -45,7 +44,7 @@ database.ref().on("value", function (snap) {
             },
             {
                 type: "dropdown", name: "Personality2", title: "How many friends does this child have?", isRequired: true, colCount: 0,
-                choices: ["Few Friend", "One or Two Friends", "Many Friends"]
+                choices: ["No Friend", "One or Two Friends", "Many Friends"]
             },
             {
                 type: "radiogroup", name: "SocialFactor1", title: "What is the gender of this child?", isRequired: true,
@@ -64,7 +63,7 @@ database.ref().on("value", function (snap) {
                 colCount: 6, choices: ["Government", "Non-Government","Catholic","Indepentent"]
             },
             {
-                type: "radiogroup", name: "FamilyFactor1", title: "Have you ever found any sign of domestic violence in the body of this child?", isRequired: true, colCount: 6,
+                type: "radiogroup", name: "FamilyFactor1", title: "Have you found any sign of domestic violence abount this child?", isRequired: true, colCount: 6,
                 choices: ["Yes", "No"]
             },
             {
@@ -73,18 +72,6 @@ database.ref().on("value", function (snap) {
             }
         ]
     });
-
-/*    survey.onValueChanged.add(function(sender, options) {
-        var erApi = "https://localhost:44306/api/IdentifyQuestions";
-        $.getJSON(erApi,
-            function(result) {
-                $.each(result, function (i, field) { document.querySelector('#surveyEvidence').innerHTML = i + " " + field; });
-            });
-    });
-
-    survey.onComplete.add(function (result) {
-        document.querySelector('#surveyEvidence').innerHTML = "result: " + JSON.stringify(result.data);
-    });*/
 
     survey.onValueChanged.add(function (sender, options) {
         var erApi = "/api/IdentifyQuestions/";
@@ -104,13 +91,13 @@ database.ref().on("value", function (snap) {
                 erApi += "1";
                 break;
             //question2
-            case "Excellent(TOP 15%)":
+            case "Excellent(Top 15%)":
                 erApi += "8";
                 break;
-            case "Good(TOP 30%)":
+            case "Good(Top 30%)":
                 erApi += "7";
                 break;
-            case "Fair(TOP 60%)":
+            case "Fair(Top 60%)":
                 erApi += "6";
                 break;
             case "Not Good(Below 60%)":
@@ -127,7 +114,7 @@ database.ref().on("value", function (snap) {
                 erApi += "11";
                 break;
             //question4
-            case "Few Friend":
+            case "No Friend":
                 erApi += "12";
                 break;
             case "One or Two Friends":
@@ -205,22 +192,13 @@ database.ref().on("value", function (snap) {
             });
     });
 
-/*    survey.onComplete.add(function (result) {
-        document.querySelector('#surveyEvidence').innerHTML = "result: " + JSON.stringify(result.data);
-    });*/
-
     survey.onComplete.add(function (result) {
 
         var $resultPanelPage = $("#ResultPanel");
         var $surveyPage = $("#SurveyPanel");
         var $evidencePage = $("#EvidencePanel");
         var $referencePage = $("#ReferencePanel");
-/*
-        var $surveyPage = $("#SurveyPanel");
-*/
-/*
-        $resultPage.show();
-*/
+
         $resultPanelPage.show();
         $surveyPage.hide();
         $evidencePage.hide();
@@ -258,13 +236,13 @@ database.ref().on("value", function (snap) {
 
         var studyEngagement2 = result.data['StudyEngagement2'];
         switch (studyEngagement2) {
-        case "Excellent(TOP 15%)":
+        case "Excellent(Top 15%)":
             studyEngagementValue += 10;
             break;
-        case "Good(TOP 30%)":
+        case "Good(Top 30%)":
             studyEngagementValue += 5;
             break;
-        case "Fair(TOP 60%)":
+        case "Fair(Top 60%)":
             studyEngagementValue -= 10;
             break;
         case "Not Good(Below 60%)":
@@ -293,7 +271,7 @@ database.ref().on("value", function (snap) {
 
         var personality2 = result.data["Personality2"];
         switch (personality2) {
-        case "Few Friend":
+        case "No Friend":
             personalityValue -= 15;
             break;
         case "One or Two Friends":
@@ -532,57 +510,56 @@ database.ref().on("value", function (snap) {
         var schoolRelatedScorePopOver = document.getElementById("SchoolRelatedPopOver");
         if (schoolFactorValue >= 60) {
             schoolRelatedScore.setAttribute("aria-valuenow", schoolFactorValue);
-            schoolRelatedScorePopOver.setAttribute("title", schoolFactorValue + "/100,Pass");
+            schoolRelatedScorePopOver.setAttribute("title", schoolFactorValue + "%,Pass");
         } else {
             schoolRelatedScore.setAttribute("style", "background-color: rgb(217,83,79);");
             schoolRelatedScore.setAttribute("aria-valuenow", schoolFactorValue);
-            schoolRelatedScorePopOver.setAttribute("title", schoolFactorValue + "/100,Fail");
+            schoolRelatedScorePopOver.setAttribute("title", schoolFactorValue + "%,Fail");
         }
 
         var familyRelatedScore = document.getElementById("FamilyRelatedScore");
         var familyRelatedScorePopOver = document.getElementById("FamilyRelatedPopOver");
         if (familyFactorValue >= 60) {
             familyRelatedScore.setAttribute("aria-valuenow", familyFactorValue);
-            familyRelatedScorePopOver.setAttribute("title", familyFactorValue + "/100,Pass");
+            familyRelatedScorePopOver.setAttribute("title", familyFactorValue + "%,Pass");
         } else {
             familyRelatedScore.setAttribute("style", "background-color: rgb(217,83,79);");
             familyRelatedScore.setAttribute("aria-valuenow", familyFactorValue);
-            familyRelatedScorePopOver.setAttribute("title", familyFactorValue + "/100,Fail");
+            familyRelatedScorePopOver.setAttribute("title", familyFactorValue + "%,Fail");
         }
 
         var socialRelatedScore = document.getElementById("SocialRelatedScore");
         var socialRelatedScorePopOver = document.getElementById("SocialRelatedPopOver");
         if (socialFactorValue >= 60) {
             socialRelatedScore.setAttribute("aria-valuenow", socialFactorValue);
-            socialRelatedScorePopOver.setAttribute("title", socialFactorValue + "/100,Pass");
+            socialRelatedScorePopOver.setAttribute("title", socialFactorValue + "%,Pass");
         } else {
             socialRelatedScore.setAttribute("style", "background-color: rgb(217,83,79);");
             socialRelatedScore.setAttribute("aria-valuenow", socialFactorValue);
-            socialRelatedScorePopOver.setAttribute("title", socialFactorValue + "/100,Fail");
+            socialRelatedScorePopOver.setAttribute("title", socialFactorValue + "%,Fail");
         }
 
         var personalityScore = document.getElementById("PersonalityScore");
         var personalityScorePopOver = document.getElementById("PersonalityPopOver");
         if (personalityValue >= 60) {
             personalityScore.setAttribute("aria-valuenow", personalityValue);
-            personalityScorePopOver.setAttribute("title", personalityValue + "/100,Pass");
+            personalityScorePopOver.setAttribute("title", personalityValue + "%,Pass");
         } else {
             personalityScore.setAttribute("style", "background-color: rgb(217,83,79);");
             personalityScore.setAttribute("aria-valuenow", personalityValue);
-            personalityScorePopOver.setAttribute("title", personalityValue + "/100,Fail");
+            personalityScorePopOver.setAttribute("title", personalityValue + "%,Fail");
         }
 
         var studyScore = document.getElementById("StudyEngagementScore");
         var studyScorePopOver = document.getElementById("StudyEngagementPopOver");
         if (studyEngagementValue >= 60) {
             studyScore.setAttribute("aria-valuenow", studyEngagementValue);
-            studyScorePopOver.setAttribute("title", studyEngagementValue + "/100,Pass");
+            studyScorePopOver.setAttribute("title", studyEngagementValue + "%,Pass");
         } else {
             studyScore.setAttribute("style", "background-color: rgb(217,83,79);");
             studyScore.setAttribute("aria-valuenow", studyEngagementValue);
-            studyScorePopOver.setAttribute("title", studyEngagementValue + "/100,Fail");
+            studyScorePopOver.setAttribute("title", studyEngagementValue + "%,Fail");
         }
-
 
         $('[data-toggle="tooltip"]').tooltip({ trigger: 'manual' }).tooltip('show');
         $(".progress-bar").each(function () {
@@ -593,3 +570,4 @@ database.ref().on("value", function (snap) {
 
     $("#surveyElement").Survey({ model: survey });
 });
+

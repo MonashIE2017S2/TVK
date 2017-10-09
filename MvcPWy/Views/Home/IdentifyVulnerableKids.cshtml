@@ -5,6 +5,9 @@
 <script src="~/Scripts/survey.jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.js"></script>
 <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src="~/Scripts/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
 <style>
     .btn-green {
         background-color: #1ab394;
@@ -112,32 +115,30 @@
                 </div>
                 <div class="panel panel-danger" id="SurveyPanel" style="background: rgba(255, 250, 250, 0.8); border: None; position: relative; left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <div class="panel-heading"><i class="fa fa-flag"></i> Identifier</div>
-                    <div class="panel-body" style="word-break: normal; max-height: 520px; overflow-y: scroll;">
-                        <div class="row clearfix">
-                            <div id="surveyElement"></div>
+                    <div class="panel-body" style="word-break: normal; max-height: 520px;">
+                            <div id="surveyElement" style="overflow-y: scroll; max-height: 472px;"></div>
                             <div id="surveyResult"></div>
                             <script src="~/Scripts/quiz.js">
                             </script>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="panel panel-danger" id="ResultPanel" hidden style="background: rgba(255, 250, 250, 0.9); border: None; position: relative; left: 30px; top: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="panel-body">
-                    <div class="container" style="height: 460px; max-width: 800px;">
+                    <div class="container" id="content" style="width: 800px;">
                         <h2 style="font-weight: bolder; position: relative; right: 110px;">General Report</h2>
                         <div class="row">
                             <div class="col-md-5" id="ScoreDisplay">
                                 <br>
                                 <div class="barWrapper">
-                                    <span class="progressText"><B>Study Engagement Score</B></span>
+                                    <span class="progressText" style="position: relative; right: 20px;"><B>Study Engagement</B></span>
                                     <div class="progress">
                                         <div class="progress-bar" id="StudyEngagementScore" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                             <span class="popOver" id="StudyEngagementPopOver" data-toggle="tooltip" data-placement="top" title="85%"> </span>
                                         </div>
                                     </div>
                                     <div class="barWrapper">
-                                        <span class="progressText"><B>Personality Score</B></span>
+                                        <span class="progressText" style="position: relative; right: 20px;"><B>Personality</B></span>
                                         <div class="progress ">
                                             <div class="progress-bar" id="PersonalityScore" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
                                                 <span class="popOver" id="PersonalityPopOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>
@@ -145,7 +146,7 @@
                                         </div>
                                     </div>
                                     <div class="barWrapper">
-                                        <span class="progressText"><B>Social-Cultural Score</B></span>
+                                        <span class="progressText" style="position: relative; right: 20px;"><B>Socio-Cultural</B></span>
                                         <div class="progress">
                                             <div class="progress-bar" id="SocialRelatedScore" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                                                 <span class="popOver" id="SocialRelatedPopOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>
@@ -153,7 +154,7 @@
                                         </div>
                                     </div>
                                     <div class="barWrapper">
-                                        <span class="progressText"><B>Family-Related Factor Score</B></span>
+                                        <span class="progressText" style="position: relative; right: 20px;"><B>Family-Related</B></span>
                                         <div class="progress">
                                             <div class="progress-bar" id="FamilyRelatedScore" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
                                                 <span class="popOver" id="FamilyRelatedPopOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>
@@ -161,7 +162,7 @@
                                         </div>
                                     </div>
                                     <div class="barWrapper">
-                                        <span class="progressText"><B>School-Related Factor Score</B></span>
+                                        <span class="progressText" style="position: relative; right: 20px;"><B>School-Related</B></span>
                                         <div class="progress">
                                             <div class="progress-bar" id="SchoolRelatedScore" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
                                                 <span class="popOver" id="SchoolRelatedPopOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>
@@ -169,30 +170,36 @@
                                         </div>
                                     </div>
                                 </div>
-@*
-                                <script>
-                                    $(function () {
-                                        $('[data-toggle="tooltip"]').tooltip({ trigger: 'manual' }).tooltip('show');
-                                    });
-
-                                    // $( window ).scroll(function() {
-                                    // if($( window ).scrollTop() > 10){  // scroll down abit and get the action
-                                    $(".progress-bar").each(function () {
-                                        each_bar_width = $(this).attr('aria-valuenow');
-                                        $(this).width(each_bar_width + '%');
-                                    });
-
-                                    //  }
-// });
-                                </script>
-*@
                             </div>
                             <div class="col-md-7" id="ResultContainer">
                                 <canvas id="radarChartResult2" width="400" height="300"></canvas>
                             </div>
                         </div>
-                        <div class="row" style="text-align: center">
-                            <!-- Button trigger modal -->
+                        <div class="row" style="text-align: center">  
+                            <p style="font-weight: bold; word-break: normal; width: 300px; text-align: center;" id="GeneralReport"></p>
+                            <input id="clickMe" type="button" value="clickme" onclick="generatePDF();" />
+                            <script>
+                                function generatePDF() {
+                                    var resultPanel = document.getElementById("ResultPanel");
+                                    html2canvas(resultPanel, {                      
+                                        onrendered:function(canvas) {
+                                            var img = canvas.toDataURL({
+                                                format: 'jpeg',
+                                                quality: 1
+                                            });
+                                            var doc = new jsPDF();
+                                            doc.addImage(img, 'JPEG', 20, 30, 170, 170);
+                                            doc.save('test.pdf');      
+                                        },
+                                    });
+                                }
+                            </script>
+@*                           <div id="content">
+                                <h1>  
+                                    We support special element handlers. Register them with jQuery-style.
+                                </h1>
+                            </div>*@
+                            @*                                                       <!-- Button trigger modal -->
                             <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModalX">
                                 Get Feedback
                             </button>
@@ -214,7 +221,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>*@
                         </div>
                     </div>
                 </div>
