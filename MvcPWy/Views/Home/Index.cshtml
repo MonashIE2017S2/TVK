@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link rel="stylesheet" href="~/Content/IndexPage.css">
+<script src="~/Scripts/AnimationLogo.js"></script>
+@*
+<link rel="stylesheet" href="~/Content/AnimationLogo.css">
+*@
+
+
+@*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>*@
+
+
+@*
+<link rel="stylesheet" href="~/Content/Weather.css">
+*@
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+</style>
+
+<div class="container">
+    <div class="col-md-2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <hr class="hr-danger"/>
+            <ol class="breadcrumb bread-danger">
+                <button class="btn btn-danger btn-tvk" onclick="location.href = '@Url.Action("IdentifyVulnerableKids", "Home")'"><i class="fa fa-flag"></i> Identify Vulnerable Kids</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-primary"/>
+            <ol class="breadcrumb bread-primary">
+                <button class="btn btn-primary btn-tvk" onclick="location.href = '@Url.Action("EducationalOutcomes", "Home")'"><i class="fa fa-bar-chart"></i> Vulnerable Kids Facts</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-success"/>
+            <ol class="breadcrumb bread-success">
+                <button class="btn btn-success btn-tvk" onclick="location.href = '@Url.Action("SupportServices", "Home")'"><i class="fa fa-envelope"></i> Support Services</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-warning"/>
+            <ol class="breadcrumb bread-warning">
+                <button class="btn btn-warning btn-tvk" onclick="location.href = '@Url.Action("ChatHub", "Home")'"><i class="fa fa-share-alt"></i> Experience Sharing</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-info"/>
+            <ol class="breadcrumb bread-info">
+                <button class="btn btn-info btn-tvk" onclick="location.href = '@Url.Action("EducationPlan", "Home")'"><i class="fa fa-file-pdf-o"></i> Child Action Plan</button>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <div class="row">
+            <div class="logo" style="top: 20px;">
+                <div class="icon animate">
+                    <span>T</span>
+                    <span>V</span>
+                    <span>K</span>
+                </div>
+                <div class="pipe animate">|</div>
+                <div class="name animate">Teaching Vulnerable Kids</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default" style="background: rgba(255, 250, 250, 0.9); border: None; position: relative; left: 30px; top: 70px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="panel-body">
+                    <div id="content" style="bottom: 0px; min-height: 50%">
+                        <div class="row">
+                            <h3 class="title" style="font-weight: bolder; font-size: 1.8em;">Schools are often "first to know" agency<br>when young people experience homelessness.
+                            </h3>
+                            <br>
+                            <br>
+                            Homeless kids can be hard to identify and even harder to help. But teachers can do a great deal to make sure that they don’t fall through the cracks.
+
+                            Usually there is a period of worsening conflict in the student's life before a student ends up in some form of homelessness.
+                            Teachers and other school staffs can identify 'at risk' students based on their behavior changes in unexpected ways.
+                            <br>
+                            <br>
+                            <br/>
+                            <p style="text-align: center">Early intervention is key to ensure that these students get to stay in schools</p>
+                            <p style="text-align: center">Reference:Australian Government Department of Social Services.</p>
+                            <p style="text-align: center">Link:https://www.dss.gov.au/ </p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*            <div id="root" style="position: relative; top: 200px;">
+                </div>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js'></script>
+                <script src="~/Scripts/Weather.js"></script>*@
+        </div>
+    </div>
+</div>
+
+

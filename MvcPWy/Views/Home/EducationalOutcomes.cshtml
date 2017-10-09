@@ -1,0 +1,714 @@
+﻿@{
+    ViewBag.Title = "Educational Outcomes";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.js"></script>
+<script src="~/Scripts/ModalSwitch.js"></script>
+<style>
+    .modal-lg {
+        width: 65%;
+    }
+</style>
+
+<div class="container">
+    <div class="col-md-2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <hr class="hr-danger" />
+            <ol class="breadcrumb bread-danger">
+                <button class="btn btn-danger btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("IdentifyVulnerableKids", "Home")'"><i class="fa fa-flag"></i> Identify Vulnerable Kids</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-primary" />
+            <ol class="breadcrumb bread-primary">
+                <button class="btn btn-primary btn-tvk" onclick="location.href = '@Url.Action("EducationalOutcomes", "Home")'"><i class="fa fa-bar-chart"></i> Vulnerable Kids Facts</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-success" />
+            <ol class="breadcrumb bread-success">
+                <button class="btn btn-success btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("SupportServices", "Home")'"><i class="fa fa-envelope"></i> Support Services</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-warning" />
+            <ol class="breadcrumb bread-warning">
+                <button class="btn btn-warning btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("ChatHub", "Home")'"><i class="fa fa-share-alt"></i> Experience Sharing</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-info" />
+            <ol class="breadcrumb bread-info">
+                <button class="btn btn-info btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("EducationPlan", "Home")'"><i class="fa fa-file-pdf-o"></i> Child Action Plan</button>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <div class="row">
+            <div class="panel panel-primary" style="background: rgba(255, 250, 250, 0.8); border: None; position: relative; top: 108px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="panel-heading"></div>
+                <div class="panel-body" style="height: 450px; word-break: normal;">
+                    <div class="row clearfix">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <br>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                        <img alt="300x200" src="~/Image/census.jpg" />
+                                        <div class="caption">
+                                            <h3>
+                                                <br> Children<br> and <br>Homelessness<br>
+                                            </h3>
+                                            <p>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#myModal1">
+                                                    Learn More
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                <h4 class="modal-title" id="myModalLabel1">Why are the vulnerable kids become homelessness? </h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <canvas id="myChart" width="1000" height="500"></canvas>
+                                                                <script>
+                                                                    var eoApi = "/api/EduOutcomes/";
+                                                                    var dataList = new Array(11);
+                                                                    var labelList = new Array(11);
+                                                                    var ctx = document.getElementById("myChart").getContext('2d');
+                                                                    Chart.defaults.global.defaultFontFamily = "Lato";
+                                                                    Chart.defaults.global.defaultFontSize = 12;
+                                                                    var eoApi1 = eoApi + "DomesticViolence";
+                                                                    $.getJSON(eoApi1,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[0] = data.dataValue;
+                                                                            labelList[0] = data.Id;
+                                                                        });
+                                                                    var eoApi2 = eoApi + "FinancialDifficulties";
+                                                                    $.getJSON(eoApi2,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[1] = data.dataValue;
+                                                                            labelList[1] = data.Id;
+                                                                        });
+                                                                    var eoApi3 = eoApi + "HousingCrisis";
+                                                                    $.getJSON(eoApi3,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[2] = data.dataValue;
+                                                                            labelList[2] = data.Id;
+                                                                        });
+                                                                    var eoApi4 = eoApi + "InappropriateDwellings";
+                                                                    $.getJSON(eoApi4,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[3] = data.dataValue;
+                                                                            labelList[3] = data.Id;
+                                                                        });
+                                                                    var eoApi5 = eoApi + "RelationshipIssues";
+                                                                    $.getJSON(eoApi5,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[4] = data.dataValue;
+                                                                            labelList[4] = data.Id;
+                                                                        });
+                                                                    var eoApi6 = eoApi + "AccommodationIssues";
+                                                                    $.getJSON(eoApi6,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[5] = data.dataValue;
+                                                                            labelList[5] = data.Id;
+                                                                        });
+                                                                    var eoApi7 = eoApi + "HealthIssues";
+                                                                    $.getJSON(eoApi7,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[6] = data.dataValue;
+                                                                            labelList[6] = data.Id;
+                                                                        });
+                                                                    var eoApi8 = eoApi + "CustodyTransition";
+                                                                    $.getJSON(eoApi8,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[7] = data.dataValue;
+                                                                            labelList[7] = data.Id;
+                                                                        });
+                                                                    var eoApi9 = eoApi + "Itinerant";
+                                                                    $.getJSON(eoApi9,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[8] = data.dataValue;
+                                                                            labelList[8] = data.Id;
+                                                                        });
+                                                                    var eoApi10 = eoApi + "Lackofsupport";
+                                                                    $.getJSON(eoApi10,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[9] = data.dataValue;
+                                                                            labelList[9] = data.Id;
+                                                                        });
+                                                                    var eoApi11 = eoApi + "Other";
+                                                                    $.getJSON(eoApi11,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataList[10] = data.dataValue;
+                                                                            labelList[10] = data.Id;
+                                                                        });
+                                                                    var myChart = new Chart(ctx,
+                                                                        {
+                                                                            type: 'bar',
+                                                                            data: {
+                                                                                labels: labelList,
+                                                                                datasets: [
+                                                                                    {
+                                                                                        label:
+                                                                                        '# Total 17845 Children Homelessness',
+
+                                                                                        data: dataList,
+                                                                                        backgroundColor: [
+                                                                                            'rgba(255, 99, 132, 0.2)',
+                                                                                            'rgba(54, 162, 235, 0.2)',
+                                                                                            'rgba(255, 206, 86, 0.2)',
+                                                                                            'rgba(75, 192, 192, 0.2)',
+                                                                                            'rgba(153, 102, 255, 0.2)',
+                                                                                            'rgba(255, 159, 64, 0.2)',
+                                                                                            'rgba(255, 99, 132, 0.2)',
+                                                                                            'rgba(54, 162, 235, 0.2)',
+                                                                                            'rgba(255, 206, 86, 0.2)',
+                                                                                            'rgba(75, 192, 192, 0.2)',
+                                                                                            'rgba(153, 102, 255, 0.2)'
+                                                                                        ],
+                                                                                        borderColor: [
+                                                                                            'rgba(255,99,132,1)',
+                                                                                            'rgba(54, 162, 235, 1)',
+                                                                                            'rgba(255, 206, 86, 1)',
+                                                                                            'rgba(75, 192, 192, 1)',
+                                                                                            'rgba(153, 102, 255, 1)',
+                                                                                            'rgba(255, 159, 64, 1)',
+                                                                                            'rgba(255, 99, 132, 1)',
+                                                                                            'rgba(54, 162, 235, 1)',
+                                                                                            'rgba(255, 206, 86, 1)',
+                                                                                            'rgba(75, 192, 192, 1)',
+                                                                                            'rgba(153, 102, 255, 1)'
+                                                                                        ],
+                                                                                        borderWidth: 4
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            options: {
+                                                                                scales: {
+                                                                                    yAxes: [
+                                                                                        {
+                                                                                            ticks: {
+                                                                                                beginAtZero: true
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        });
+                                                                </script>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default btn-prev">Prev</button>
+                                                                <button type="button" class="btn btn-default btn-next">Next</button>
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                <h4 class="modal-title" id="myModalLabel2">Homelessness and Children</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <canvas id="polarAreaChart" width="1000" height="500"></canvas>
+                                                                <script>
+                                                                    var eoApiQ2 = "/api/EduOutcomes/";
+                                                                    var dataListQ2 = new Array(5);
+                                                                    var eoApiQ21 = eoApiQ2 + "Childrenage1218";
+                                                                    $.getJSON(eoApiQ21,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ2[0] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ22 = eoApiQ2 + "Childrenunder12";
+                                                                    $.getJSON(eoApiQ22,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ2[1] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ23 = eoApiQ2 + "Childrensleepingrough";
+                                                                    $.getJSON(eoApiQ23,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ2[2] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ24 = eoApiQ2 + "Childrenage1218inVIC";
+                                                                    $.getJSON(eoApiQ24,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ2[3] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ25 = eoApiQ2 + "Childrenunder12inVIC";
+                                                                    $.getJSON(eoApiQ25,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ2[4] = data.dataValue;
+                                                                        });
+                                                                    var ctx = document.getElementById("polarAreaChart").getContext('2d');
+                                                                    Chart.defaults.global.defaultFontFamily = "Lato";
+                                                                    Chart.defaults.global.defaultFontSize = 12;
+                                                                    var birdsData = {
+                                                                        labels: [
+                                                                            "Children age 12-18", "Children under 12", "Children sleeping rough",
+                                                                            "Children age 12-18 in VIC", "Children under 12 in VIC"
+                                                                        ],
+                                                                        datasets: [
+                                                                            {
+                                                                                data: dataListQ2,
+                                                                                backgroundColor: [
+                                                                                    "rgba(255, 0, 0, 0.6)",
+                                                                                    "rgba(0, 255,200, 0.6)",
+                                                                                    "rgba(200, 0, 200, 0.6)",
+                                                                                    "rgba(0, 255, 0, 0.6)",
+                                                                                    "rgba(255, 255, 0, 0.6)"
+                                                                                ],
+                                                                                borderColor: "rgba(0, 0, 0, 0.8)"
+                                                                            }
+                                                                        ]
+                                                                    };
+
+                                                                    var chartOptions = {
+                                                                        startAngle: -Math.PI / 4,
+                                                                        legend: {
+                                                                            position: 'top'
+                                                                        },
+                                                                        animation: {
+                                                                            animateRotate: true
+                                                                        }
+                                                                    };
+
+                                                                    var polarAreaChart = new Chart(ctx,
+                                                                        {
+                                                                            type: 'polarArea',
+                                                                            data: birdsData,
+                                                                            options: chartOptions
+                                                                        });
+                                                                </script>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default btn-prev">Prev</button>
+                                                                <button type="button" class="btn btn-default btn-next">Next</button>
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @*                                        <!-- Modal -->
+                                                    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                    <h4 class="modal-title" id="myModalLabel3">Where do the children stay</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <canvas id="donutChart2" width="1000" height="700"></canvas>
+                                                                    <script>
+                                                                        var oilCanvas = document.getElementById("donutChart2");
+
+                                                                        Chart.defaults.global.defaultFontFamily = "Lato";
+                                                                        Chart.defaults.global.defaultFontSize = 12;
+
+                                                                        var oilData = {
+                                                                            labels: [
+                                                                                "Aboriginal and Torres Strait Islander",
+                                                                                "non-Aboriginal or Torres Strait Islanders"
+                                                                            ],
+                                                                            datasets: [
+                                                                                {
+                                                                                    data: [26744, 78493],
+                                                                                    backgroundColor: [
+                                                                                        "#FF6384",
+                                                                                        "#63FF84"
+                                                                                    ],
+                                                                                    borderColor: "white",
+                                                                                    borderWidth: 1
+                                                                                }
+                                                                            ]
+                                                                        };
+
+                                                                        var chartOptions = {
+                                                                            rotation: -Math.PI,
+                                                                            cutoutPercentage: 30,
+                                                                            circumference: Math.PI,
+                                                                            legend: {
+                                                                                position: 'top'
+                                                                            },
+                                                                            animation: {
+                                                                                animateRotate: false,
+                                                                                animateScale: true
+                                                                            }
+                                                                        };
+
+                                                                        var pieChart = new Chart(oilCanvas,
+                                                                            {
+                                                                                type: 'doughnut',
+                                                                                data: oilData,
+                                                                                options: chartOptions
+                                                                            });
+                                                                    </script>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default btn-prev">Prev</button>
+                                                                    <button type="button" class="btn btn-default btn-next">Next</button>
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>*@
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                <h4 class="modal-title" id="myModalLabel3">Where do the children stay?</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <canvas id="donutChart" width="1000" height="500"></canvas>
+                                                                <script>
+                                                                    var eoApiQ3 = "/api/EduOutcomes/";
+                                                                    var dataListQ3 = new Array(6);
+                                                                    var eoApiQ31 = eoApiQ3 + "Q31";
+                                                                    $.getJSON(eoApiQ31,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ3[0] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ32 = eoApiQ3 + "Q32";
+                                                                    $.getJSON(eoApiQ32,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ3[1] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ33 = eoApiQ3 + "Q33";
+                                                                    $.getJSON(eoApiQ33,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ3[2] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ34 = eoApiQ3 + "Q34";
+                                                                    $.getJSON(eoApiQ34,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ3[3] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ35 = eoApiQ3 + "Q35";
+                                                                    $.getJSON(eoApiQ35,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ3[4] = data.dataValue;
+                                                                        });
+                                                                    var eoApiQ36 = eoApiQ3 + "Q36";
+                                                                    $.getJSON(eoApiQ36,
+                                                                        {
+                                                                            format: "json"
+                                                                        })
+                                                                        .done(function (data) {
+                                                                            dataListQ3[5] = data.dataValue;
+                                                                        });
+                                                                    var oilCanvas = document.getElementById("donutChart");
+                                                                    Chart.defaults.global.defaultFontFamily = "Lato";
+                                                                    Chart.defaults.global.defaultFontSize = 12;
+
+                                                                    var oilData = {
+                                                                        labels: [
+                                                                            "Improvised dwellings, tents or sleeping out",
+                                                                            "Supported accommodation for the homeless",
+                                                                            "Staying temporarily with other households ",
+                                                                            "Boarding houses",
+                                                                            "Other temporary lodging",
+                                                                            "“Severely” overcrowded dwellings "
+                                                                        ],
+                                                                        datasets: [
+                                                                            {
+                                                                                data: dataListQ3,
+                                                                                backgroundColor: [
+                                                                                    "#FF6384",
+                                                                                    "#63FF84",
+                                                                                    "#40beff",
+                                                                                    "#c034ff",
+                                                                                    "#6384FF",
+                                                                                    "#ffbe4f",
+                                                                                    "#ff24a7"
+                                                                                ],
+                                                                                borderColor: "white",
+                                                                                borderWidth: 1
+                                                                            }
+                                                                        ]
+                                                                    };
+
+                                                                    var chartOptions = {
+                                                                        rotation: -Math.PI,
+                                                                        cutoutPercentage: 30,
+                                                                        circumference: Math.PI,
+                                                                        legend: {
+                                                                            position: 'top'
+                                                                        },
+                                                                        animation: {
+                                                                            animateRotate: false,
+                                                                            animateScale: true
+                                                                        }
+                                                                    };
+
+                                                                    var pieChart = new Chart(oilCanvas,
+                                                                        {
+                                                                            type: 'doughnut',
+                                                                            data: oilData,
+                                                                            options: chartOptions
+                                                                        });
+                                                                </script>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default btn-prev">Prev</button>
+                                                                <button type="button" class="btn btn-default btn-next">Next</button>
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                                    $("div[id^='myModal']").each(function () {
+
+                                                                        var currentModal = $(this);
+
+                                                                        //click next
+                                                                        currentModal.find('.btn-next').click(function () {
+                                                                            currentModal.modal('hide');
+                                                                            currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show');
+                                                                        });
+
+                                                                        //click prev
+                                                                        currentModal.find('.btn-prev').click(function () {
+                                                                            currentModal.modal('hide');
+                                                                            currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show');
+                                                                        });
+
+                                                                    });
+
+                                                </script>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                        <img alt="300x200" src="~/Image/Health.jpg" />
+                                        <div class="caption">
+                                            <h3>
+                                                Impact of <br> homelessness <br> on children's<br> health
+                                            </h3>
+                                            <p>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#my2Modal1">
+                                                    Learn More
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="my2Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                <h4 class="modal-title" id="myModalLabel2">Health Situation Comparison</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <canvas id="radarChart" width="1000" height="500"></canvas>
+                                                                <script>
+                                                                    var ctx = document.getElementById("radarChart").getContext('2d');
+                                                                    Chart.defaults.global.defaultFontFamily = "Lato";
+                                                                    Chart.defaults.global.defaultFontSize = 12;
+                                                                    var marksData = {
+                                                                        labels: [
+                                                                            "Developmental Delays", "Nutritional Deficits", "Asthma",
+                                                                            "Infectious Illness", "Gastrointestinal Problems",
+                                                                            "Anxiety and depression"
+                                                                        ],
+                                                                        datasets: [
+                                                                            {
+                                                                                label: "Health Condition of Normal Children",
+                                                                                backgroundColor: "rgba(200,0,0,0.2)",
+                                                                                data: [100, 90, 80, 80, 90, 90]
+                                                                            }, {
+                                                                                label: "Health Condition of Children Experiencing Homelessness",
+                                                                                backgroundColor: "rgba(0,0,200,0.2)",
+                                                                                data: [70, 60, 70, 60, 70, 50]
+                                                                            }
+                                                                        ]
+                                                                    };
+                                                                    var optionsRadar = {
+                                                                        scale: {
+                                                                            ticks: {
+                                                                                beginAtZero: true,
+                                                                                max: 100
+                                                                            },
+                                                                            pointLabels: {
+                                                                                fontSize: 16
+                                                                            }
+                                                                        }
+                                                                    };
+                                                                    var radarChartHealth = new Chart(ctx,
+                                                                        {
+                                                                            type: 'radar',
+                                                                            data: marksData,
+                                                                            options: optionsRadar
+                                                                        });
+                                                                </script>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                        <img alt="300x200" src="~/Image/Education.jpg" />
+                                        <div class="caption">
+                                            <h3>
+                                                Impact of <br> homelessness <br> on children's<br> education
+                                            </h3>
+                                            <p>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#my3Modal1">
+                                                    Learn More
+                                                </button><!-- Modal -->
+                                                <div class="modal fade" id="my3Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                <h4 class="modal-title" id="myModalLabel2">Education Situation Comparison</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <canvas id="radarChart2" width="1000" height="500"></canvas>
+                                                                <script>
+                                                                    var ctx = document.getElementById("radarChart2").getContext('2d');
+                                                                    Chart.defaults.global.defaultFontFamily = "Lato";
+                                                                    Chart.defaults.global.defaultFontSize = 12;
+                                                                    var marksData = {
+                                                                        labels: [
+                                                                            "Emotion Isolation", "Establishing and Maintaining Friendships",
+                                                                            "Discrimination in the schoolyard", "Suffering an amount fo stress",
+                                                                            "Reduced concentration skills", "Academic and learning delays",
+                                                                            "Absenteeism", "Dropout"
+                                                                        ],
+                                                                        datasets: [
+                                                                            {
+                                                                                label: "Education Condition of Normal Children",
+                                                                                backgroundColor: "rgba(200,0,0,0.2)",
+                                                                                data: [75, 80, 80, 80, 90, 70, 80, 90]
+                                                                            }, {
+                                                                                label: "Education Condition of Children Experiencing Homelessness",
+                                                                                backgroundColor: "rgba(0,0,200,0.2)",
+                                                                                data: [55, 70, 75, 75, 70, 70, 70, 40]
+                                                                            }
+                                                                        ]
+                                                                    };
+                                                                    var optionsRadar = {
+                                                                        scale: {
+                                                                            ticks: {
+                                                                                beginAtZero: true,
+                                                                                max: 100
+                                                                            },
+                                                                            pointLabels: {
+                                                                                fontSize: 16
+                                                                            }
+                                                                        }
+                                                                    };
+                                                                    var radarChartEducation = new Chart(ctx,
+                                                                        {
+                                                                            type: 'radar',
+                                                                            data: marksData,
+                                                                            options: optionsRadar
+                                                                        });
+                                                                </script>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

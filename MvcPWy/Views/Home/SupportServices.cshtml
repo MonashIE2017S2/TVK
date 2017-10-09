@@ -1,0 +1,528 @@
+﻿@{
+    ViewBag.Title = "Support Services";
+}
+
+<style>
+    .modal-open {
+        overflow: visible;
+    }
+
+    .modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom .navbar-fixed-top {
+        padding-right: 0px !important;
+        margin-right: 0px !important;
+    }
+     .abc {
+         display: table;
+         height: 80%;
+         width: 100%;
+     }
+
+    .abc > p {
+        height: 80%;
+    }
+
+    .find {
+        padding: 2%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    .emergency {
+        height: 20%;
+        min-height: 60px;
+        display: table-cell;
+    }
+
+    #SupportPanel {
+        background: rgba(255, 250, 250, 0.8);
+        border: None;
+        position: relative;
+        left: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: black;
+        width: 80%;
+        text-align: center;
+    }
+
+
+    .headingRow {
+        background-color: #009688;
+        border-color: #969494;
+        color: black;
+        font-size: x-large;
+    }
+
+    input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-control {
+        font-weight: bold;
+    }
+
+    .list-group-item-success {
+        font-weight: bold;
+        color: #304FFE;
+    }
+
+    #content a {
+        font-size: large;
+    }
+</style>
+
+<div class="container">
+    <div class="col-md-2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <hr class="hr-danger" />
+            <ol class="breadcrumb bread-danger">
+                <button class="btn btn-danger btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("IdentifyVulnerableKids", "Home")'"><i class="fa fa-flag"></i> Identify Vulnerable Kids</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-primary" />
+            <ol class="breadcrumb bread-primary">
+                <button class="btn btn-primary btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("EducationalOutcomes", "Home")'"><i class="fa fa-bar-chart"></i> Vulnerable Kids Facts</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-success" />
+            <ol class="breadcrumb bread-success">
+                <button class="btn btn-success btn-tvk" onclick="location.href = '@Url.Action("SupportServices", "Home")'"><i class="fa fa-envelope"></i> Support Services</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-warning" />
+            <ol class="breadcrumb bread-warning">
+                <button class="btn btn-warning btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("ChatHub", "Home")'"><i class="fa fa-share-alt"></i> Experience Sharing</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-info" />
+            <ol class="breadcrumb bread-info">
+                <button class="btn btn-info btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("EducationPlan", "Home")'"><i class="fa fa-file-pdf-o"></i> Child Action Plan</button>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <div class="panel panel-success" style="background: rgba(255, 250, 250, 0.9); border: None; position: relative; top: 105px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="panel-heading">
+        </div>
+            <div class="panel-body" style="max-height: 500px; overflow-y: scroll;">
+                <div ng-app="myApp" id="content">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: center; position: relative; top: -50px;" >
+                            <h3 style="color: red">
+                                <br /><b>In case of an Emergency call police 000</b><br />
+                            </h3>
+                            <h4 style="color: black">
+                                If you are concerned about a student who is at risk of or experiencing homelessness and/ or are wanting advice or information,
+                                please call Opening Doors:
+                                <b>1800 825 955</b> - 24 hour, statewide, toll free number.
+                            </h4>
+                            <button class="btn btn-success btn-tvk" onclick="location.href = '@Url.Action("EmailHelper", "Home")'"><i class="fa fa-envelope"></i> Draft your emails</button>
+
+                            @*                            <button class="btn btn-danger btn-tvk" data-toggle="modal" data-target="#myModalX2">Emergency</button>
+                            <div class="modal fade" id="myModalX2" role="dialog">
+                                <div class="modal-dialog" style="z-index: 1000; position: absolute; top: 30% !important; left: 35% !important;">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <h2 style="color: red">
+                                                <br /><b>In case of an Emergency call police 000</b><br />
+                                            </h2>
+                                            <h4 style="color: black">
+                                                If you are concerned about a student who is at risk of or experiencing homelessness and/ or are wanting advice or information,
+                                                please call Opening Doors:
+                                                <b>1800 825 955</b> - 24 hour, statewide, toll free number.
+                                            </h4><br />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>*@
+                        </div>
+@*                        <div class="col-md-6" style="text-align: center">
+                            <button class="btn btn-success btn-tvk" onclick="location.href = '@Url.Action("EmailHelper", "Home")'"><i class="fa fa-envelope"></i> Draft a email to angency</button>
+                        </div>*@
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-body" style="word-break: normal; height: 260px; padding-bottom: 20px;">
+                                    <div class="blockquote blockquote-primary abc">
+                                        <p style="text-align: left">
+                                            <b>Re-engagement Program</b> supports young people aged between 12 and 17 who are not connected to school or
+                                            are at risk of disengaging. The program targets students who have attended less than 30% of the
+                                            previous school term.
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn btn-primary find" data-toggle="modal" data-target="#reengage">
+                                            Find Providers
+                                        </button>
+                                        <div class="modal fade" id="reengage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                            <div class="panel panel-default" id="SupportPanel">
+                                                <div class="panel-heading headingRow" id="reengageList">
+                                                    <span>Re-Engagement Program Providers</span>
+                                                </div>
+                                                <div class="panel-body" style="padding-top: 20px;">
+                                                    <div class="row clearfix">
+                                                        <!---script src="~/Scripts/support.js"></!--script-->
+                                                        <div ng-controller="reengageCtrl">
+                                                            <div class="search row">
+                                                                <div class="col-md-5">
+                                                                    <span>Find Re-engagement Program Providers in your DET Area</span>
+                                                                    <br />
+                                                                    <span>*Click on the list to get more details</span>
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <input type="text" class="form-control" ng-model="filterReengage" placeholder="Search Re-Engagement Provider..." ng-change="reengageChanged()" />
+                                                                </div>
+
+                                                            </div>
+
+                                                            <table class="table table-striped table-responsive">
+                                                                <thead>
+                                                                    <tr class="headingRow" style="background-color: #009688;">
+                                                                        <td class="col-md-4 headingRow">Re-engagement Provider</td>
+                                                                        <td class="col-md-4 headingRow">Contact</td>
+                                                                        <td class="col-md-4 headingRow">Email</td>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+
+
+                                                                    <tr dir-paginate="x in reengage | orderBy: 'name' | filter: filterReengage |itemsPerPage : 7 " ng-click="selReengage(x);goTo('reengagementDetails')" pagination-id="pag-4">
+                                                                        <td>{{ x.name }}</td>
+                                                                        <td>{{ x.phone }}</td>
+                                                                        <td>{{ x.email }}</td>
+
+                                                                    </tr>
+                                                                </tbody>
+
+
+                                                            </table>
+                                                            <dir-pagination-controls max-size="7"
+                                                                                     direction-links="true"
+                                                                                     pagination-id="pag-4"
+                                                                                     boundary-links="true">
+                                                            </dir-pagination-controls>
+
+                                                            <div>
+                                                                <div class="panel">
+                                                                    <div class="panel-body" id="reengagementDetails" ng-if="selected_reengage">
+                                                                        <div class="col-md-2">
+                                                                            <button class="btn btn-danger" ng-click="goTo('reengageList')">< Back To List</button>
+                                                                        </div>
+                                                                        <div class="col-md-10">
+                                                                            <h3>Agency: {{selected_reengage.name}}</h3>
+                                                                        </div>
+                                                                        <div class="col-md-6" style="text-align: left">
+                                                                            <h3>{{ selected_reengage.name }}</h3>
+                                                                            <h4>{{ selected_reengage.type }}</h4>
+                                                                            <h4>{{ selected_reengage.phone }}</h4>
+                                                                            <a href="mailto:{{selected_reengage.email}}">{{selected_reengage.email}}</a>
+                                                                            <a href="{{selected_reengage.website}}"><h4 style="color: blue">{{ selected_reengage.website }}</h4></a>
+                                                                            <h4>{{ selected_reengage.address }}</h4>
+                                                                        </div>
+                                                                        <div class="col-md-6" style="text-align: center">
+                                                                            <ng-map center="{{selected_reengage.address}}" zoom="16">
+                                                                                <marker position="{{selected_reengage.address}}" title="{{selected_reengage.address}}" animation="Animation.BOUNCE"></marker>
+
+
+                                                                            </ng-map>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-body" style="word-break: normal; padding-bottom: 20px;">
+                                    <div class="blockquote blockquote-primary abc">
+                                        <p style="text-align: left">
+                                            <b>School Focused Youth Service</b> supports young people aged between 10 and 18 who are highly vulnerable to
+                                            or showing disengagement from school, to remain connected to school.
+                                            SFYS providers connect schools to a wide range of services, including direct interventions for young people, capacity building for school staff and partners, and local planning to identify and address disengagement.
+                                        </p>
+                                        <button type="button" class="btn btn-primary find" data-toggle="modal" data-target="#sfys">
+                                            Find SFYS Services
+                                        </button>
+                                        <div class="modal fade" id="sfys" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                            <div class="panel panel-default" id="SupportPanel">
+                                                <div class="panel-heading headingRow" id="sfysList">
+                                                    <span>School Focused Youth Service</span>
+                                                </div>
+                                                <div class="panel-body" style="word-break: break-all; padding-top: 20px;">
+                                                    <div class="row clearfix">
+                                                        <!---script src="~/Scripts/support.js"></!--script-->
+                                                        <div ng-controller="sfysCtrl">
+                                                            <div class="search row">
+                                                                <div class="col-md-5">
+                                                                    <span>Find Contact Details of Nearest School Focused Youth Service</span>
+                                                                    <br />
+                                                                    <span>*Click on the list to get more details</span>
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <input type="text" class="form-control" ng-model="filterSfys" placeholder="Search School Focused Youth Service using Postcode..." ng-change="suburbChanged(filterSfys)" />
+                                                                </div>
+
+                                                            </div>
+
+                                                            <table class="table table-striped table-responsive">
+                                                                <thead>
+                                                                    <tr class="headingRow" style="background-color: #009688;">
+                                                                        <td class="col-md-4 headingRow">SFYS Provider</td>
+                                                                        <td class="col-md-4 headingRow">Contact</td>
+                                                                        <td class="col-md-4 headingRow">Email</td>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+
+
+                                                                    <tr dir-paginate="x in filteredSfys | orderBy: 'name' |itemsPerPage : 7 " ng-click="selSfys(x);goTo('sfysDetails')" pagination-id="pag-2">
+                                                                        <td>{{ x.name }}</td>
+                                                                        <td>{{ x.phone }}</td>
+                                                                        <td>{{ x.email }}</td>
+
+                                                                    </tr>
+                                                                </tbody>
+
+
+                                                            </table>
+                                                            <dir-pagination-controls max-size="7"
+                                                                                     direction-links="true"
+                                                                                     pagination-id="pag-2"
+                                                                                     boundary-links="true">
+                                                            </dir-pagination-controls>
+
+                                                            <div>
+                                                                <div class="panel">
+                                                                    <div class="panel-body" id="sfysDetails" ng-if="selected_sfys">
+                                                                        <div class="col-md-2">
+                                                                            <button class="btn btn-danger" ng-click="goTo('sfysList')">< Back To List</button>
+                                                                        </div>
+                                                                        <div class="col-md-10">
+                                                                            <h3>Agency: {{selected_sfys.name}}</h3>
+                                                                        </div>
+                                                                        <div class="col-md-6" style="text-align: left">
+                                                                            <h3>{{ selected_sfys.name }}</h3>
+                                                                            <h4>{{ selected_sfys.phone }}</h4>
+                                                                            <a href="mailto:{{selected_sfys.email}}">{{selected_sfys.email}}</a>
+                                                                            <a href="{{selected_sfys.website}}"><h4 style="color: blue">{{ selected_sfys.website }}</h4></a>
+                                                                            <h4>{{ selected_sfys.address }}</h4>
+                                                                        </div>
+                                                                        <div class="col-md-6" style="text-align: center">
+                                                                            <ng-map center="{{selected_sfys.address}}" zoom="16">
+                                                                                <marker position="{{selected_sfys.address}}" title="{{selected_sfys.address}}" animation="Animation.BOUNCE"></marker>
+
+
+                                                                            </ng-map>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 10px">
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-body" style="word-break: normal; padding-bottom: 20px;">
+                                    <div class="blockquote blockquote-primary abc">
+                                        <p style="text-align: left">
+                                            <b>Child FIRST and Child Protection</b>
+                                            <br /><br />
+                                            1. If you have significant concerns that a child and their family need a referral to Child FIRST for family services.
+                                            <br /><br />
+                                            2. If your concerns relate to a child in need of <b style="color: red">immediate protection</b>; or you have formed a belief that a child is at significant risk of harm
+
+                                        </p>
+                                        <div class="modal fade" id="childfirst" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                            <div class="panel panel-default" id="SupportPanel">
+                                                <div class="panel-heading headingRow">
+                                                    <span>Child FIRST/Protection Services</span>
+                                                </div>
+                                                <div class="panel-body" style="word-break: break-all; padding-top: 20px;">
+                                                    <div class="row clearfix">
+                                                        <!---script src="~/Scripts/support.js"></!--script-->
+                                                        <div ng-controller="childFirstCtrl">
+                                                            <div class="search row">
+                                                                <div class="col-md-5">
+                                                                    <span>Find Contact Details of Child FIRST/Protection Service</span>
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <input type="text" class="form-control" ng-model="filterChildFirst" placeholder="Search Child FIRST/Protection Services..." />
+                                                                </div>
+
+                                                            </div>
+                                                            <table class="table table-striped table-responsive">
+
+                                                                <tr class="headingRow" style="background-color: #009688;">
+                                                                    <td class="col-md-4 headingRow">Region</td>
+                                                                    <td class="col-md-4 headingRow">Contact</td>
+                                                                    <td class="col-md-4 headingRow">Type</td>
+                                                                </tr>
+
+
+
+                                                                <tr dir-paginate="x in childFirst | filter: filterChildFirst | orderBy : 'region' | itemsPerPage : 7 " current-page="currentPage" pagination-id="pag-1">
+                                                                    <td>{{ x.region }}</td>
+                                                                    <td>{{ x.phone }}</td>
+                                                                    <td>{{ x.type }}</td>
+                                                                </tr>
+
+
+
+                                                            </table>
+                                                            <dir-pagination-controls max-size="7"
+                                                                                     pagination-id="pag-1"
+                                                                                     direction-links="true"
+                                                                                     boundary-links="true">
+                                                            </dir-pagination-controls>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary find" data-toggle="modal" data-target="#childfirst">
+                                            Contact Child FIRST/Protection Services
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-body" style="word-break: normal; height: 260px; padding-bottom: 20px;">
+                                    <div class="blockquote blockquote-primary abc">
+                                        <p>
+                                            Find other child focused support services that provide a range of support services to the child or family. <br />
+                                            Some of these services supports children's emotional and physical well being, and engagement with education, while some others helps families affected by family violence.
+                                        </p>
+                                        <br>
+                                        <button type="button" class="btn btn-primary find" data-toggle="modal" data-target="#support">
+                                            Find Support Services
+                                        </button>
+                                        <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                            <div class="panel panel-default" id="SupportPanel">
+                                                <div class="panel-heading headingRow" id="supportList">
+                                                    <span>Other Support Services</span>
+                                                </div>
+                                                <div class="panel-body" style="word-break: break-all; padding-top: 20px;">
+                                                    <div class="row clearfix">
+                                                        <!---script src="~/Scripts/support.js"></!--script-->
+                                                        <div ng-controller="supportCtrl">
+                                                            <div class="search row">
+                                                                <div class="col-md-5">
+                                                                    <span>Click to View Details of Nearest Services</span>
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <input type="text" class="form-control" ng-model="filterSupport" placeholder="Search Support Services..." ng-change="supportChanged()" />
+                                                                </div>
+
+                                                            </div>
+
+
+                                                            <table class="table table-striped table-responsive">
+                                                                <thead>
+                                                                    <tr class="headingRow" style="background-color: #009688;">
+                                                                        <td class="col-md-2 headingRow">Agency Name</td>
+                                                                        <td class="col-md-2 headingRow">Address</td>
+                                                                        <td class="col-md-2 headingRow">Phone</td>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr dir-paginate="x in support | filter: filterSupport | orderBy : 'name' |itemsPerPage: 7 " ng-click="selItem(x); goTo('supportDetails')" pagination-id="pag-3">
+                                                                        <td>{{ x.name }}</td>
+                                                                        <td>{{ x.address }}</td>
+                                                                        <td>{{ x.phone }}</td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                            <dir-pagination-controls max-size="7"
+                                                                                     pagination-id="pag-3"
+                                                                                     direction-links="true"
+                                                                                     boundary-links="true">
+                                                            </dir-pagination-controls>
+
+                                                            <div ng-if="selected_support" id="supportDetails">
+                                                                <div class="panel">
+                                                                    <div class="panel-body">
+                                                                        <div class="col-md-2">
+                                                                            <button class="btn btn-danger" ng-click="goTo('supportList')">< Back To List</button>
+                                                                        </div>
+                                                                        <div class="col-md-10">
+                                                                            <h3>Agency: {{selected_support.name}}</h3>
+                                                                        </div>
+                                                                        <div class="col-md-6" style="text-align: left">
+                                                                            <h3>{{ selected_support.name }}</h3>
+                                                                            <h4>{{ selected_support.phone }}</h4>
+                                                                            <a href="mailto:{{selected_support.email}}">{{selected_support.email}}</a>
+                                                                            <a href="{{selected_support.website}}"><h4 style="color: blue">{{ selected_support.website }}</h4></a>
+                                                                            <h4>{{ selected_support.address }}</h4>
+                                                                        </div>
+                                                                        <div class="col-md-6" style="text-align: center">
+                                                                            <ng-map center="{{selected_support.address}}" zoom="16">
+                                                                                <marker position="{{selected_support.address}}" title="{{selected_support.address}}" animation="Animation.BOUNCE"></marker>
+                                                                            </ng-map>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/support.js"></script>
+</div>
+
+
+

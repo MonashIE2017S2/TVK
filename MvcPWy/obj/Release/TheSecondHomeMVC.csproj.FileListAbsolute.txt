@@ -1,0 +1,602 @@
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\MvcPWy.dll.config
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Antlr3.Runtime.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\EntityFramework.SqlServer.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\JWT.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Newtonsoft.Json.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Owin.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\RestSharp.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\SendGrid.SmtpApi.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\SendGridMail.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Helpers.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Mvc.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Optimization.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Razor.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.WebPages.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Twilio.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\WebGrease.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\EntityFramework.SqlServer.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Newtonsoft.Json.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\RestSharp.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Helpers.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Mvc.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Razor.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.WebPages.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Optimization.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\Twilio.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.GenerateResource.Cache
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\MvcPWy.Migrations.initialsetup.resources
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\MvcPWy.Migrations.addstudentid.resources
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\MvcPWy.Migrations.addtest.resources
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\MvcPWy.Migrations.addtest1.resources
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Net.Http.Formatting.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Http.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Http.WebHost.dll
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Net.Http.Formatting.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Http.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\bin\System.Web.Http.WebHost.xml
+C:\Users\Yang-Deng\Desktop\the2homeMVC\MvcPWy\obj\Release\MvcPWy.Migrations.addIdentifyQuestion.resources
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\MvcPWy.dll.config
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\MvcPWy.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\MvcPWy.pdb
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Antlr3.Runtime.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\EntityFramework.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\EntityFramework.SqlServer.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\JWT.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Newtonsoft.Json.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Owin.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\RestSharp.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\SendGrid.SmtpApi.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\SendGridMail.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Net.Http.Formatting.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Helpers.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Http.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Http.WebHost.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Mvc.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Optimization.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Razor.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Twilio.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\WebGrease.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\EntityFramework.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\EntityFramework.SqlServer.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Newtonsoft.Json.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\RestSharp.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Net.Http.Formatting.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Helpers.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Http.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Http.WebHost.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Mvc.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Razor.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Optimization.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Twilio.xml
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.initialsetup.resources
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.addstudentid.resources
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.addtest.resources
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.addtest1.resources
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.addIdentifyQuestion.resources
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.GenerateResource.Cache
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.dll
+C:\Users\Yang-Deng\Downloads\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\MvcPWy.dll.config
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Antlr3.Runtime.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\EntityFramework.SqlServer.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\JWT.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Newtonsoft.Json.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\RestSharp.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\SendGrid.SmtpApi.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\SendGridMail.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Net.Http.Formatting.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Helpers.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Http.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Http.WebHost.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Mvc.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Optimization.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Razor.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Twilio.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\WebGrease.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\EntityFramework.SqlServer.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Newtonsoft.Json.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\RestSharp.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Net.Http.Formatting.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Helpers.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Http.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Http.WebHost.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Mvc.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Razor.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\System.Web.Optimization.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\bin\Twilio.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.initialsetup.resources
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.addstudentid.resources
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.addtest.resources
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.addtest1.resources
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.Migrations.addIdentifyQuestion.resources
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.GenerateResource.Cache
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC-e3134b80243f9674cfb9952cb5bb69c653eddd9f\MvcPWy\obj\Release\TheSecondHomeMVC.csprojResolveAssemblyReference.cache
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\obj\Release\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\obj\Release\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\MvcPWy.dll.config
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Antlr3.Runtime.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\EntityFramework.SqlServer.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\JWT.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Newtonsoft.Json.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\RestSharp.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\SendGrid.SmtpApi.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\SendGridMail.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Net.Http.Formatting.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Helpers.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Http.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Http.WebHost.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Mvc.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Optimization.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Razor.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.WebPages.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Twilio.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\WebGrease.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\EntityFramework.SqlServer.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Newtonsoft.Json.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\RestSharp.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Net.Http.Formatting.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Helpers.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Http.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Http.WebHost.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Mvc.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Razor.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.WebPages.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\System.Web.Optimization.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVC\MvcPWy\bin\Twilio.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\MvcPWy.dll.config
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Antlr3.Runtime.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\EntityFramework.SqlServer.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\JWT.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Newtonsoft.Json.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Owin.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\RestSharp.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\SendGrid.SmtpApi.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\SendGridMail.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Net.Http.Formatting.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Helpers.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Http.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Http.WebHost.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Mvc.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Optimization.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Razor.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.WebPages.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Twilio.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\WebGrease.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\EntityFramework.SqlServer.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Newtonsoft.Json.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\RestSharp.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Net.Http.Formatting.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Helpers.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Http.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Http.WebHost.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Mvc.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Razor.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.WebPages.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\System.Web.Optimization.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\bin\Twilio.xml
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\obj\Release\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\obj\Release\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\obj\Release\MvcPWy.Migrations.initialmigration.resources
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.GenerateResource.Cache
+C:\Users\Yang-Deng\Desktop\TheSecondHomeMVCwithoutDB\MvcPWy\obj\Release\TheSecondHomeMVC.csprojResolveAssemblyReference.cache
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\MvcPWy.dll.config
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\MvcPWy.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\MvcPWy.pdb
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Antlr3.Runtime.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\EntityFramework.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\EntityFramework.SqlServer.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\JWT.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Newtonsoft.Json.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Owin.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\RestSharp.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\SendGrid.SmtpApi.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\SendGridMail.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Net.Http.Formatting.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Helpers.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Http.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Http.WebHost.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Mvc.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Optimization.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Razor.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.WebPages.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Twilio.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\WebGrease.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\EntityFramework.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\EntityFramework.SqlServer.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Newtonsoft.Json.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\RestSharp.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Net.Http.Formatting.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Helpers.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Http.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Http.WebHost.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Mvc.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Razor.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.WebPages.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\System.Web.Optimization.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\bin\Twilio.xml
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\obj\Release\MvcPWy.Migrations.initialmigration.resources
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.GenerateResource.Cache
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\obj\Release\MvcPWy.dll
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\obj\Release\MvcPWy.pdb
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\obj\Release\MvcPWy.Migrations.addreengage.resources
+C:\Users\Yang-Deng\Documents\Visual Studio 2017\Projects\TVKmilestone\TVKmilestone\MvcPWy\obj\Release\TheSecondHomeMVC.csprojResolveAssemblyReference.cache
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\MvcPWy.dll.config
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Antlr3.Runtime.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\EntityFramework.SqlServer.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\JWT.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Newtonsoft.Json.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Owin.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\RestSharp.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\SendGrid.SmtpApi.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\SendGridMail.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Net.Http.Formatting.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Helpers.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Http.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Http.WebHost.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Mvc.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Optimization.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Razor.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.WebPages.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Twilio.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\WebGrease.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\EntityFramework.SqlServer.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Newtonsoft.Json.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\RestSharp.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Net.Http.Formatting.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Helpers.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Http.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Http.WebHost.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Mvc.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Razor.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.WebPages.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\System.Web.Optimization.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\bin\Twilio.xml
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\obj\Release\MvcPWy.Migrations.initialmigration.resources
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\obj\Release\MvcPWy.Migrations.addreengage.resources
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.GenerateResource.Cache
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\obj\Release\MvcPWy.dll
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\obj\Release\MvcPWy.pdb
+C:\Users\Yang-Deng\Desktop\TVKmilestone\MvcPWy\obj\Release\TheSecondHomeMVC.csprojResolveAssemblyReference.cache
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\MvcPWy.dll.config
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\MvcPWy.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\MvcPWy.pdb
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Antlr3.Runtime.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\EntityFramework.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\EntityFramework.SqlServer.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\JWT.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Newtonsoft.Json.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Owin.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\RestSharp.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\SendGrid.SmtpApi.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\SendGridMail.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Net.Http.Formatting.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Helpers.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Http.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Http.WebHost.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Mvc.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Optimization.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Razor.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.WebPages.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Twilio.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\WebGrease.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\EntityFramework.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\EntityFramework.SqlServer.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Newtonsoft.Json.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\RestSharp.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Net.Http.Formatting.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Helpers.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Http.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Http.WebHost.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Mvc.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Razor.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.WebPages.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\System.Web.Optimization.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\bin\Twilio.xml
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\obj\Release\TheSecondHomeMVC.csprojResolveAssemblyReference.cache
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\obj\Release\MvcPWy.Migrations.initialmigration.resources
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\obj\Release\MvcPWy.Migrations.addreengage.resources
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.GenerateResource.Cache
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\obj\Release\TheSecondHomeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\obj\Release\MvcPWy.dll
+C:\Users\Yang-Deng\Documents\TVK\MvcPWy\obj\Release\MvcPWy.pdb

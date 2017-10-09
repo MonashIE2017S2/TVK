@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TVK</title>
+    @Styles.Render("~/Content/Site.css")
+    @*   @Scripts.Render("~/Scripts/modernizr")
+    @Scripts.Render("~/Scripts/jquery")
+    @Scripts.Render("~/Scripts/bootstrap")*@
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <script src="~/Scripts/bootstrap.min.js" ></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKyNWwokxKr9BZ1PJyVTJNQLECQq9LlFg&callback=initMap"
+            type="text/javascript"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="~/Scripts/dirPagination.js"></script>
+    <script src="https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.min.js"></script>
+    <link rel="stylesheet" href="~/Content/Animation.css">
+@*
+    <script src="~/Scripts/bootstrap.js"></script>
+*@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
+    <link href="~/Image/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/BGbird.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <style>
+        hr {
+            height: 4px;
+            margin-left: 15px;
+            margin-bottom: -3px;
+        }
+
+        .hr-warning {
+            background-image: -webkit-linear-gradient(left, rgba(210,105,30,.8), rgba(210,105,30,.6), rgba(0,0,0,0));
+        }
+
+        .hr-success {
+            background-image: -webkit-linear-gradient(left, rgba(15,157,88,.8), rgba(15, 157, 88,.6), rgba(0,0,0,0));
+        }
+
+        .hr-primary {
+            background-image: -webkit-linear-gradient(left, rgba(66,133,244,.8), rgba(66, 133, 244,.6), rgba(0,0,0,0));
+        }
+
+        .hr-danger {
+            background-image: -webkit-linear-gradient(left, rgba(244,67,54,.8), rgba(244,67,54,.6), rgba(0,0,0,0));
+        }
+
+        .hr-info {
+            background-image: -webkit-linear-gradient(left, rgba(86,192,224,.8), rgba(86,192,224,.6), rgba(0,0,0,0));
+        }
+
+        .hr-doc {
+            background-image: -webkit-linear-gradient(left, rgba(170, 21, 238, 0.8), rgba(170,21,238,.6), rgba(0,0,0,0));
+        }
+
+        /*.btn-danger {
+            /*
+            padding: 10px 5px;
+
+            width: 180px;
+            text-align: center;
+            
+        }
+
+        .btn-primary {
+            /*
+            padding: 10px 12px;
+
+            width: 180px;
+            text-align: center;
+        }
+
+        .btn-success {
+            /*
+            padding: 10px 28px;
+
+            width: 180px;
+            text-align: center;
+        }
+
+        .btn-info {
+            /*
+            padding: 10px 41px;
+
+            width: 180px;
+            text-align: center;
+        }
+
+        .btn-warning {
+            /*
+            padding: 10px 20px;
+
+            width: 180px;
+            text-align: center;
+        }*
+        /*/
+
+        .btn-tvk {
+            width: 200px;
+            text-align: center;
+            height: 45px;
+        }
+
+        .breadcrumb {
+            background: rgba(245, 245, 245, 0);
+            border: 0px solid rgba(245, 245, 245, 1);
+            border-radius: 25px;
+            display: block;
+        }
+
+        .btn-bread {
+            margin-top: 10px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+
+        .btn-doc {
+            color: #fff;
+            background-color: rgba(120,21,238,1);
+            border-color: rgba(170,21,238,1);
+            padding: 10px 35px;
+            text-align: left;
+        }
+
+            .btn-doc:hover,
+            .btn-doc:focus,
+            .btn-doc.focus,
+            .btn-doc:active,
+            .btn-doc.active,
+            .open > .dropdown-toggle.btn-primary {
+                color: #fff;
+                background-color: rgba(120,21,238,1);
+                border-color: rgba(120,21,238,1);
+            }
+
+            .btn-doc:active,
+            .btn-doc.active,
+            .open > .dropdown-toggle.btn-primary {
+                background-image: none;
+            }
+
+            .btn-doc.disabled,
+            .btn-doc[disabled],
+            fieldset[disabled] .btn-doc,
+            .btn-doc.disabled:hover,
+            .btn-doc[disabled]:hover,
+            fieldset[disabled] .btn-doc:hover,
+            .btn-doc.disabled:focus,
+            .btn-doc[disabled]:focus,
+            fieldset[disabled] .btn-doc:focus,
+            .btn-doc.disabled.focus,
+            .btn-doc[disabled].focus,
+            fieldset[disabled] .btn-doc.focus,
+            .btn-doc.disabled:active,
+            .btn-doc[disabled]:active,
+            fieldset[disabled] .btn-doc:active,
+            .btn-doc.disabled.active,
+            .btn-doc[disabled].active,
+            fieldset[disabled] .btn-doc.active {
+                background-color: rgba(120,21,238,1);
+                border-color: rgba(120,21,238,1);
+            }
+
+            .btn-doc .badge {
+                color: rgba(120,21,238,1);
+                background-color: #fff;
+            }
+    </style>
+</head>
+<body>
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-10">
+        <br>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <footer style="text-align: right;">
+                        <p style="font-weight: bold">&copy; @DateTime.Now.Year -Team-Y-Nots</p>
+                </footer>
+            </section>
+        </div>
+        @RenderSection("Scripts", required: false)
+    </div>
+    <div class="col-md-1">
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
+                    <img style="width:50px; margin-top: -13px;-moz-transform: translate(25px, 0px); -webkit-transform: translate(25px, 0px);" src="~/Image/logo.png">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("TVK | Home", "Index", "Home", new {area = ""}, new {@style = "color: white; "})</li>
+                    <li>@Html.ActionLink("About", "About", "Home", new {area = ""}, new {@style = "color: white; "})</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new {area = ""}, new {@style = "color: white; "})</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+﻿@{
+    ViewBag.Title = "Identify Vulnerable Kids";
+}
+
+<script src="~/Scripts/survey.jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.js"></script>
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<style>
+    .btn-green {
+        background-color: #1ab394;
+        color: #fff;
+        border-radius: 3px;
+    }
+
+        .btn-green:hover, .btn-green:focus {
+            background-color: #18a689;
+            color: #fff;
+        }
+
+    .panel-footer {
+        /*
+            padding: 0 15px;
+    */
+        border: none;
+        text-align: right;
+        background-color: #fff;
+    }
+
+    .tooltip {
+        position: relative;
+        float: right;
+        z-index: 10;
+    }
+
+        .tooltip > .tooltip-inner {
+            background-color: #eebf3f;
+            padding: 5px 15px;
+            color: rgb(23,44,66);
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+    .popOver + .tooltip > .tooltip-arrow {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #eebf3f;
+    }
+
+    /*    section{
+        margin:100px auto;
+        height:1000px;
+    }*/
+    .progress {
+        border-radius: 0;
+        overflow: visible;
+    }
+
+    .progress-bar {
+        background: rgb(66,139,202);
+        -webkit-transition: width 1.5s ease-in-out;
+        transition: width 1.5s ease-in-out;
+    }
+</style>
+<div class="container">
+    <div class="col-md-2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <hr class="hr-danger" />
+            <ol class="breadcrumb bread-danger">
+                <button class="btn btn-danger btn-tvk" style="font-weight: 800;" onclick="location.href = '@Url.Action("IdentifyVulnerableKids", "Home")'">Identify Vulnerable Kid</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-primary" />
+            <ol class="breadcrumb bread-primary">
+                <button class="btn btn-primary btn-tvk" onclick="location.href = '@Url.Action("EducationalOutcomes", "Home")'"><i class="fa fa-bar-chart"></i> Vulnerable Kids Facts</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-success" />
+            <ol class="breadcrumb bread-success">
+                <button class="btn btn-success btn-tvk" onclick="location.href = '@Url.Action("SupportServices", "Home")'"><i class="fa fa-envelope"></i> Support Services</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-warning" />
+            <ol class="breadcrumb bread-warning">
+                <button class="btn btn-warning btn-tvk" onclick="location.href = '@Url.Action("ChatHub", "Home")'"><i class="fa fa-share-alt"></i> Experience Sharing</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-info" />
+            <ol class="breadcrumb bread-info">
+                <button class="btn btn-info btn-tvk" onclick="location.href = '@Url.Action("EducationPlan", "Home")'"><i class="fa fa-file-pdf-o"></i> Child Action Plan</button>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <div class="row" style="position: relative; top: 68px; left: -40px;">
+            <div class="col-md-6">
+                <br>
+                <div id="display"></div>
+                <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+                <div class="container">
+                    <ul id="contacts" class="list-group">
+                        <!-- Conatct Object li.list-group-item.contact will be added here by js -->
+                    </ul>
+                </div>
+                <div class="panel panel-danger" id="SurveyPanel" style="background: rgba(255, 250, 250, 0.8); border: None; position: relative; left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <div class="panel-heading"><i class="fa fa-flag"></i> Identifier</div>
+                    <div class="panel-body" style="word-break: normal; max-height: 520px; overflow-y: scroll;">
+                        <div class="row clearfix">
+                            <div id="surveyElement"></div>
+                            <div id="surveyResult"></div>
+                            <script src="~/Scripts/quiz.js">
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-danger" id="ResultPanel" hidden style="background: rgba(255, 250, 250, 0.9); border: None; position: relative; left: 30px; top: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="panel-body">
+                    <div class="container" style="height: 460px; max-width: 800px;">
+                        <h2 style="font-weight: bolder; position: relative; right: 110px;">General Report</h2>
+                        <div class="row">
+                            <div class="col-md-5" id="ScoreDisplay">
+                                <br>
+                                <div class="barWrapper">
+                                    <span class="progressText"><B>Study Engagement Score</B></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" id="StudyEngagementScore" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                            <span class="popOver" id="StudyEngagementPopOver" data-toggle="tooltip" data-placement="top" title="85%"> </span>
+                                        </div>
+                                    </div>
+                                    <div class="barWrapper">
+                                        <span class="progressText"><B>Personality Score</B></span>
+                                        <div class="progress ">
+                                            <div class="progress-bar" id="PersonalityScore" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+                                                <span class="popOver" id="PersonalityPopOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="barWrapper">
+                                        <span class="progressText"><B>Social-Cultural Score</B></span>
+                                        <div class="progress">
+                                            <div class="progress-bar" id="SocialRelatedScore" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="popOver" id="SocialRelatedPopOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="barWrapper">
+                                        <span class="progressText"><B>Family-Related Factor Score</B></span>
+                                        <div class="progress">
+                                            <div class="progress-bar" id="FamilyRelatedScore" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="popOver" id="FamilyRelatedPopOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="barWrapper">
+                                        <span class="progressText"><B>School-Related Factor Score</B></span>
+                                        <div class="progress">
+                                            <div class="progress-bar" id="SchoolRelatedScore" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="popOver" id="SchoolRelatedPopOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+@*
+                                <script>
+                                    $(function () {
+                                        $('[data-toggle="tooltip"]').tooltip({ trigger: 'manual' }).tooltip('show');
+                                    });
+
+                                    // $( window ).scroll(function() {
+                                    // if($( window ).scrollTop() > 10){  // scroll down abit and get the action
+                                    $(".progress-bar").each(function () {
+                                        each_bar_width = $(this).attr('aria-valuenow');
+                                        $(this).width(each_bar_width + '%');
+                                    });
+
+                                    //  }
+// });
+                                </script>
+*@
+                            </div>
+                            <div class="col-md-7" id="ResultContainer">
+                                <canvas id="radarChartResult2" width="400" height="300"></canvas>
+                            </div>
+                        </div>
+                        <div class="row" style="text-align: center">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModalX">
+                                Get Feedback
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModalX" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                <div class="modal-dialog" style="z-index: 1000; position: absolute; top: 30% !important; left: 35% !important;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h2 class="modal-title" id="myModalLabel2" style="font-weight: bolder;">Feedback</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p style="font-weight: bold;" id="GeneralReport">The situation of this kid is Ok~</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-success btn-tvk" onclick="location.href = '@Url.Action("SupportServices", "Home")'"><i class="fa fa-envelope"></i> Support Services</button>
+
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="panel panel-danger" id="EvidencePanel" style="background: rgba(255, 255, 255, 0.8); border: None; position: relative; left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="panel-heading">Evidence</div>
+                        <div class="panel-body" style="word-break: normal; height: 200px; overflow-y: scroll;">
+                            <div id="surveyEvidence"></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="panel panel-danger" id="ReferencePanel" style="background: rgba(255, 255, 255, 0.8); border: None; position: relative; left: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="panel-heading">Reference</div>
+                        <div class="panel-body" style="word-break: normal; height: 200px; overflow-y: scroll;">
+                            <div id="surveyReference"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

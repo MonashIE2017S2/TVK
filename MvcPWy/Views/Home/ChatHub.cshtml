@@ -1,0 +1,277 @@
+﻿@{
+    ViewBag.Title = "Experience Sharing";
+}
+@*
+<style>
+    .c-list {
+        padding: 0px;
+        min-height: 44px;
+    }
+
+    .title {
+        display: inline-block;
+        font-size: 1.7em;
+        font-weight: bold;
+        padding: 5px 15px;
+    }
+
+    ul.c-controls {
+        list-style: none;
+        margin: 0px;
+        min-height: 44px;
+    }
+
+        ul.c-controls li {
+            margin-top: 8px;
+            float: left;
+        }
+
+            ul.c-controls li a {
+                font-size: 1.7em;
+                padding: 11px 10px 6px;
+            }
+
+                ul.c-controls li a i {
+                    min-width: 24px;
+                    text-align: center;
+                }
+
+                ul.c-controls li a:hover {
+                    background-color: rgba(51, 51, 51, 0.2);
+                }
+
+    .c-toggle {
+        font-size: 1.7em;
+    }
+
+    .name {
+        font-size: 1.7em;
+        font-weight: 700;
+    }
+
+    .c-info {
+        padding: 5px 10px;
+        font-size: 1.25em;
+    }
+</style>
+*@
+<link rel="stylesheet" href="~/Content/popup.css">
+<script src="~/Scripts/jquery.signalR-2.2.2.js"></script>
+<script src="~/signalr/hubs"></script>
+<script>
+    var chat = $.connection.chatHub;
+    var name = null;
+
+    //Promote a window for the user to input NickName
+    $(function () {
+        name = prompt("Please input your Pseudonym", "TeacherA");
+    });
+
+    //After the SignalR set up, what need to do
+    $.connection.hub.start().done(function () {
+
+        //Make the server know when new user come
+        chat.server.userConnected(name);
+
+        //Send Button
+        $('#btnSend').click(function () {
+            send();
+        });
+        //when Enter button click
+        $('#txtMsg').keydown(function (e) {
+            if (e.which === 13) {
+                send();
+            }
+        });
+
+        //Select one user
+        $(document).on("click",
+            "#lstUser li",
+            function () {
+                var name = $(this).html();
+                var id = $(this).attr('id');
+
+                $('#lblTalkToWho').html(name);
+                $('#lblTalkToWhoId').html(id);
+            });
+    });
+
+    //Display Usage
+    chat.client.show = function (message) {
+        $('#chatRoom').append('<li>' + message + '</li>');
+    };
+
+    //Display User List
+    chat.client.getList = function (users) {
+        var li = "<li id=all>Public Channel</li>";
+        $.each(users,
+            function (i, user) {
+                li += '<li id=' + user.id + ' >' + user.name + '</li>'
+            });
+        $('#lstUser').html(li);
+    };
+
+    //User Leave
+    chat.client.removeList = function (id) {
+        $('#' + id).remove();
+    };
+
+    function checkkeywords(sentence) {
+        var flag = false;
+        var keywords = ['VIC', 'vic', 'NSW', 'nsw', 'TAS', 'tas', 'ACT', 'act', 'SA', 'sa', 'WA', 'wa'];
+        for (var i = 0; i < keywords.length; i++) {
+            var check = sentence.search(keywords[i]);
+            if (check >= 0) {
+                flag = true;
+            }
+        }
+        return flag;
+    }
+
+    function checkDirtywords(sentence) {
+        var flag = false;
+        var keywords = ['bitch', 'fuck', 'WTF', 'shit'];
+        for (var i = 0; i < keywords.length; i++) {
+            var check = sentence.search(keywords[i]);
+            if (check >= 0) {
+                flag = true;
+            }
+        }
+        return flag;
+    }
+
+    console.log(checkkeywords("Hello, this is"));
+
+    //Send message to the server
+    function send() {
+        var id = $('#lblTalkToWhoId').text();
+        var message = $('#txtMsg').val();
+        var popup = document.getElementById("myPopup");
+        var popup2 = document.getElementById("myPopup2");
+        if (id === "all") {
+            if (checkkeywords(message.toLowerCase())) {
+                /*bootbox.alert("dont input personal address");*/
+                popup.classList.toggle("show");
+                popup.hidden();
+            } else if (checkDirtywords(message.toLowerCase())) {
+                popup2.classList.toggle("show");
+                popup2.hidden();
+            }
+            else {
+                chat.server.send($('#txtMsg').val());
+            }
+        } else {
+            chat.server.sendOne(id, $('#txtMsg').val());
+        }
+        $('#txtMsg').val('');
+    }
+</script>
+<div class="container">
+    <div class="col-md-2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <hr class="hr-danger" />
+            <ol class="breadcrumb bread-danger">
+                <button class="btn btn-danger btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("IdentifyVulnerableKids", "Home")'"><i class="fa fa-flag"></i> Identify Vulnerable Kids</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-primary" />
+            <ol class="breadcrumb bread-primary">
+                <button class="btn btn-primary btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("EducationalOutcomes", "Home")'"><i class="fa fa-bar-chart"></i> Vulnerable Kids Facts</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-success" />
+            <ol class="breadcrumb bread-success">
+                <button class="btn btn-success btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("SupportServices", "Home")'"><i class="fa fa-envelope"></i> Support Services</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-warning" />
+            <ol class="breadcrumb bread-warning">
+                <button class="btn btn-warning btn-tvk" onclick="location.href = '@Url.Action("ChatHub", "Home")'"><i class="fa fa-share-alt"></i> Experience Sharing</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-info" />
+            <ol class="breadcrumb bread-info">
+                <button class="btn btn-info btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("EducationPlan", "Home")'"><i class="fa fa-file-pdf-o"></i> Child Action Plan</button>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="panel panel-warning" style="background: rgba(255, 250, 250, 0.9); border: None; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="panel-heading">Share your experience in Facebook & Twitter or our own channel</div>
+                        <div class="panel-body" style="text-align: center;">
+                            <div class="fb-page" data-href="https://www.facebook.com/HPUVIC/?hc_ref=ARSM6bKuCjqEx1TrYuNFgRM5SraHvR7XiYjidWsHajrfUgt5rf9wRj-kNvWU9-b7sPU&amp;fref=nf" data-tabs="timeline" data-width="500" data-height="70" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/HPUVIC/?hc_ref=ARSM6bKuCjqEx1TrYuNFgRM5SraHvR7XiYjidWsHajrfUgt5rf9wRj-kNvWU9-b7sPU&amp;fref=nf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HPUVIC/?hc_ref=ARSM6bKuCjqEx1TrYuNFgRM5SraHvR7XiYjidWsHajrfUgt5rf9wRj-kNvWU9-b7sPU&amp;fref=nf">Homeless Persons Union Victoria</a></blockquote>
+                            </div>
+                            <div id="fb-root"></div>
+                            <script>
+                                (function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>
+                            <a class="twitter-timeline" data-width="500" data-height="50" data-theme="light" href="https://twitter.com/HomelessnessAus?ref_src=twsrc%5Etfw"></a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel panel-warning" style="background: rgba(255, 250, 250, 0.9); border: None; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="panel-body" style="height: 185px; word-break: normal; overflow-y: scroll;">
+                            <p style="font-weight: bolder; text-align: center">Welcome to our Chatroom.</p>
+                            <ul id="chatRoom"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel panel-warning" style="background: rgba(255, 250, 250, 0.9); border: None; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="panel-body" style="height: 63px; text-align: center">
+                            <div class="col-md-12">
+                                <div class="popup">
+                                    Send To:
+                                    <label id="lblTalkToWho">Public Channel</label>
+                                    <label id="lblTalkToWhoId" hidden>all</label>
+                                    <input id="txtMsg" type="text" />
+                                    <span class="popuptext" id="myPopup">Don't send address info!</span>
+                                    <span class="popuptext" id="myPopup2">Don't send inappropriate words!</span>
+                                    <input type="button" id="btnSend" value="Send" class="btn btn-warning" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-warning" style="background: rgba(255, 250, 250, 0.9); border: None;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <div class="panel-heading">Online User List</div>
+                    <div class="panel-body" style="height: 593px; word-break: normal; overflow-y: scroll;">
+                        <ul class="list-group" id="contact-list">
+                            <li class="list-group-item">
+                                <ul id="lstUser"></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

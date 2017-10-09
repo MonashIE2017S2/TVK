@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "Individual Education Plan";
+}
+<style>
+    .abc {
+        display: table;
+        height: 80%;
+    }
+
+        .abc > p {
+            height: 80%;
+        }
+
+    .find {
+        padding: 2%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    .emergency {
+        min-height: 100px;
+        padding-top: 50px;
+        display: table-cell;
+    }
+
+    .clearfix {
+        height: 100%;
+    }
+
+    #content {
+        height: 100%;
+    }
+
+    .panel-body {
+        text-align: left;
+        color: black;
+    }
+
+    .panel-title {
+        color: maroon;
+    }
+</style>
+
+<div class="container">
+    <div class="col-md-2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <hr class="hr-danger" />
+            <ol class="breadcrumb bread-danger">
+                <button class="btn btn-danger btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("IdentifyVulnerableKids", "Home")'"><i class="fa fa-flag"></i> Identify Vulnerable Kids</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-primary" />
+            <ol class="breadcrumb bread-primary">
+                <button class="btn btn-primary btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("EducationalOutcomes", "Home")'"><i class="fa fa-bar-chart"></i> Vulnerable Kids Facts</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-success" />
+            <ol class="breadcrumb bread-success">
+                <button class="btn btn-success btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("SupportServices", "Home")'"><i class="fa fa-envelope"></i> Support Services</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-warning" />
+            <ol class="breadcrumb bread-warning">
+                <button class="btn btn-warning btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("ChatHub", "Home")'"><i class="fa fa-share-alt"></i> Experience Sharing</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-info" />
+            <ol class="breadcrumb bread-info">
+                <button class="btn btn-info btn-tvk" onclick="location.href = '@Url.Action("EducationPlan", "Home")'"><i class="fa fa-file-pdf-o"></i> Child Action Plan</button>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <br />
+        <div class="panel panel-info" style="background: rgba(255, 250, 250, 0.9); border: None; position: relative; top: 85px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="panel-heading">Individual Education Plan</div>
+            <div class="panel-body">
+                <br>
+                <br>
+                <p style="font-weight: bolder; text-align: center;">
+                    An Individual/Special Eduvation Plan creates an opportunity for teachers, parents,
+                    and school administrators to work together to improve educational results for children
+                    who needs special attention.                
+                </p>
+                <br>
+                <br>
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div id="collapse1" class="panel-body" style="height: 273px;">
+                            <p style="text-align: left">
+                                <b>Special Needs Plan</b>
+                                <br/><br/>
+                                Promote best practices in schools in Victoria to support all students, including those with disabilities and
+                                additional needs.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <a class="btn btn-primary" href="http://www.education.vic.gov.au/about/department/Pages/specialneeds.aspx">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div id="collapse2" class="panel-body">
+                            <p style="text-align: left">
+                                <b>Individual Education Plan</b>
+                                <br/><br/>
+                                Individual Education Plan must be developed for every student in Out-of-Home Care by Student Support
+                                Group in schools. The plan must address a set of strategies to address the particular educational needs
+                                of the student and must be constantly updated to track the progress
+
+                            </p>
+                            <a href="http://www.education.vic.gov.au/school/teachers/health/Pages/oohcedplans.aspx" class="btn btn-primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

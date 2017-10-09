@@ -1,0 +1,295 @@
+﻿@{
+    ViewBag.Title = "Email Helper Page";
+}
+<div class="container">
+    <div class="col-md-2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <hr class="hr-danger" />
+            <ol class="breadcrumb bread-danger">
+                <button class="btn btn-danger btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("IdentifyVulnerableKids", "Home")'"><i class="fa fa-flag"></i> Identify Vulnerable Kids</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-primary" />
+            <ol class="breadcrumb bread-primary">
+                <button class="btn btn-primary btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("EducationalOutcomes", "Home")'"><i class="fa fa-bar-chart"></i> Vulnerable Kids Facts</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-success" />
+            <ol class="breadcrumb bread-success">
+                <button class="btn btn-success btn-tvk" onclick="location.href = '@Url.Action("SupportServices", "Home")'"><i class="fa fa-envelope"></i> Support Services</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-warning" />
+            <ol class="breadcrumb bread-warning">
+                <button class="btn btn-warning btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("ChatHub", "Home")'"><i class="fa fa-share-alt"></i> Experience Sharing</button>
+            </ol>
+        </div>
+        <div class="row">
+            <hr class="hr-info" />
+            <ol class="breadcrumb bread-info">
+                <button class="btn btn-info btn-tvk" style="background:rgba(0,0,0,0.3);" onclick="location.href = '@Url.Action("EducationPlan", "Home")'"><i class="fa fa-file-pdf-o"></i> Child Action Plan</button>
+            </ol>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <div class="panel panel-default" style="background: rgba(255, 250, 250, 0.9); border: None; position: relative; top: 105px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 style="font-weight: bolder;">Email Builder</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 style="font-weight: bolder;">Preview</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" style="word-break: normal; overflow-y: scroll; max-height: 430px;">
+                        <p>
+                            <br />
+                            Your Name: <input id="name" oninput="Email.changeName()" style="float: right"></input>
+                            <br>
+                            <br>
+                            School Name: <input id="school" oninput="Email.changeSchool()" style="float: right"></input>
+                            <br>
+                            <br>
+                            Child Name: <input id="childname" oninput="Email.changeChildName()" style="float: right"></input>
+                            <br>
+                            <br>
+                            Address of this Child: <input id="Address" oninput="Email.changeAddress()" style="float: right"></input>
+                            <br>
+                            <br>
+                            Affair:
+                            <label for="affair1" style="float: right">Domestic Violence</label>
+                            <input type="radio" id="affair1" name="Affair" value="Domestic Violence" onclick="Email.changeAffair()" style="float: right"/>
+                            <label for="affair2" style="float: right">Housing Crisis</label>
+                            <input type="radio" id="affair2" name="Affair" value="Housing Crisis" onclick="Email.changeAffair()" style="float: right"/>
+                            <br>
+                            <label for="affair3" style="float: right">Parents Probelm(Drug and Alcohol)</label>
+                            <input type="radio" id="affair3" name="Affair" value="Drug and Alcohol" onclick="Email.changeAffair()" style="float: right" />
+                            <label for="affair4" style="float: right">Financial Hardship</label>
+                            <input type="radio" id="affair4" name="Affair" value="Financial Hardship" onclick="Email.changeAffair()" style="float: right" />
+                            <br>
+                            <br>
+                            Contact of the child:
+                            <br>
+                            <input type="radio" id="contact1" name="Contact" value="Father" onclick="Email.changeContact()"/>
+                            <label for="contact1">Mobile of child's father</label>
+                            <input type="radio" id="contact2" name="Contact" value="Mother" onclick="Email.changeContact()"/>
+                            <label for="contact2">Mobiel of child's mother</label>
+                            <br>
+                            <input type="radio" id="contact3" name="Contact" value="Family" onclick="Email.changeContact()"/>
+                            <label for="contact3">Phone of family</label>
+                            <br>
+                            Contact Name: <input id="contactName" oninput="Email.changeContactName()" style="float: right"></input>
+                            <br>
+                            <br>
+                            Contact Number: <input id="contactNumber" oninput="Email.changeContactNumber()" style="float: right"></input>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="col-md-6" style="word-break: normal; overflow-y: scroll; max-height: 390px;">
+                        <p id="emailDone" style="font-weight: bold;">Generating...</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-info" onclick="Email.sendEmail()">Open Email Clint</button>
+                        @Html.ActionLink("Cannot Open?", "EmailHelp", "Home", new { area = "" }, new { @style = "color: red; " })
+                    </div>
+                  @*  <div class="col-md-4">
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Email(name) {
+        // Changeable
+        this.name = name;
+        this.receiver = "";
+        this.childname = "";
+        this.school = "";
+        this.event = "";
+        this.Location = "";
+        this.contact = "";
+        this.Mobile = "";
+        this.ParentName = "";
+
+        this.changeContactNumber = () => {
+            this.Mobile = document.getElementById("contactNumber").value;
+            this.generate();
+        }
+
+        this.changeContactName = () => {
+            this.ParentName = document.getElementById("contactName").value;
+            this.generate();
+        }
+
+        this.changeAddress = () => {
+            this.Location = document.getElementById("Address").value;
+            this.generate();
+        }
+
+        this.changeContact = () => {
+            var contacts = document.getElementsByName("Contact");
+            var selectedcontact = "";
+
+            for (var i = 0; i < contacts.length; i++) {
+                if (contacts[i].checked)
+                    selectedcontact = contacts[i].value;
+            }
+
+            switch (selectedcontact) {
+                case "Father":
+                    this.contact = "I know that you can make a contact with the father of kid, ";
+                    break;
+                case "Mother":
+                    this.contact = "I know that you can make a contact with Mother of the kid, ";
+                    break;
+                case "Family":
+                    this.contact = "I know that you can make a contact with landline, the number is ";
+                    break;
+                default:
+                    this.contact = " ";
+            }
+            this.generate();
+        }
+
+/*        this.changeAgency = () => {
+            var events = document.getElementsByName("Report");
+            var selectedevent = "None";
+
+            for (var i = 0; i < events.length; i++) {
+                if (events[i].checked)
+                    selectedevent = events[i].value;
+            }
+            console.log(selectedevent);
+
+            switch (selectedevent) {
+                case "Salvationarmy":
+                    this.receiverEmail = "nigel.mapes@aus.salvationarmy.org";
+                    this.receiver = "staff of SalvationArmy";
+                    break;
+                case "YouthOfftheStreets":
+                    this.receiverEmail = "info@youthoffthestreets.com.au ";
+                    this.receiver = "staff of YouthOfftheStreets";
+                    break;
+                case "VincentCareVictoria":
+                    this.receiverEmail = "vincentcare@vincentcare.org.au";
+                    this.receiver = "staff of Vincent Care";
+                    break;
+                default:
+                    this.receiverEmail = "";
+                    this.receiver = "";
+            }
+            this.generate();
+        }*/
+
+        this.changeName = () => {
+            this.name = document.getElementById("name").value;
+            this.generate();
+        }
+
+        this.changeSchool = () => {
+            this.school = document.getElementById("school").value;
+            this.generate();
+        }
+
+        this.changeChildName = () => {
+            this.childname = document.getElementById("childname").value;
+            this.generate();
+        }
+
+        this.changeAffair = () => {
+            var events = document.getElementsByName("Affair");
+            var selectedevent = "None";
+
+            for (var i = 0; i < events.length; i++) {
+                if (events[i].checked)
+                    selectedevent = events[i].value;
+            }
+            console.log(selectedevent);
+
+            switch (selectedevent) {
+                case "Domestic Violence":
+                    this.event = " facing a problem of domestic violence.";
+                    this.receiverEmail = "vincentcare@vincentcare.org.au";
+                    this.receiver = "staff of Vincent Care";
+                    break;
+                case "Housing Crisis":
+                    this.event = " facing a problem of housing crisis.";
+                    this.receiverEmail = "vincentcare@vincentcare.org.au";
+                    this.receiver = "staff of Vincent Care";
+                    break;
+                case "Drug and Alcohol":
+                    this.event =
+                        " facing a drug and alcohol problem in his family, which affect learning life of this child.";
+                    this.receiverEmail = "vincentcare@vincentcare.org.au";
+                    this.receiver = "staff of Vincent Care";
+                    break;
+                case "Financial Hardship":
+                    this.event =
+                        "facing a problem of financial hardship.";
+                    this.receiverEmail = "vincentcare@vincentcare.org.au";
+                    this.receiver = "staff of Vincent Care";
+                    break;
+                default:
+                    this.event = " ";
+            }
+            this.generate();
+        }
+
+        // Not Changeable
+        this.last = "Best Regards";
+
+        this.generate = () => {
+            var space = "<br />" + "<br />"; //"%0D%0A" + "%0D%0A";
+            var space2 = "%0D%0A" + "%0D%0A";
+            this.application = "<b> Subject: Email from school teacher and seek help for child. </b>";
+            this.application2 = "Email from school teacher and seek help for kid.";
+
+            var line1 = "Dear " + this.receiver + ",";
+            var line2 = "I am a teacher " + " in " + this.school + ".";
+            var line3 = "There is a student of mine called " + this.childname + " who may " + this.event;
+            var line4 = "we recommend that you can have a help in your power and put this situation on records." +
+                "The address of this child is " +
+                this.Location + ".";
+            var line45 = this.contact + this.ParentName + ", whose mobile number is " + this.Mobile;
+            var line5 = this.last;
+            var line6 = this.name;
+            var line7 = "<br><hr> This email is sending from TVK website.";
+
+            this.content = this.application + space + line1 + space + line2 + space + line3 + space + line4 + space + line45 + space + line5 + space + line6 + line7;
+            this.content2 = line1 + space2 + line2 + space2 + line3 + space2 + line4 + space2 + line45 + space2 + line5 + space2 + line6;
+
+            this.update(this.content);
+        }
+
+        this.update = (e) => {
+            document.getElementById("emailDone").innerHTML = e;
+        }
+
+        this.sendEmail = () => {
+            var link = "mailto:" + this.receiverEmail + "?subject=" + this.application2 + "&body=" + this.content2;
+            window.open(link);
+        }
+    }
+    var Email = new Email("Yang");
+    Email.generate();
+</script>
+
+
